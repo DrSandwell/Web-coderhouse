@@ -1,11 +1,16 @@
 @font-face {
     font-family: cherry;
-    src: url(font/Cherry\ Bird\ Demo.ttf);
+    src: url(/WEB/font/Cherry\ Bird\ Demo.ttf);
 }
 
 @font-face {
     font-family: elegant;
-    src: url(font/Elegant\ Handwriting.otf);
+    src: url(/WEB/font/Elegant\ Handwriting.otf);
+}
+
+@font-face {
+    font-family: juliette;
+    src: url(/WEB/font/Juliette.otf);
 }
 
 *{
@@ -17,7 +22,7 @@
 header{
     height: 80px;
     width: 100%;
-    background-color: #E08C7E;
+    background-color: #D88F80;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
@@ -66,12 +71,13 @@ ul a:hover{
 
 main{
     height: 100vh;
-    background-color: #E6CAC5;  
+    background-color: #FDE6E1;
+    margin-bottom: 80px;  
 }
 
 .container{
     margin:auto;
-    background-color: #E6CAC5;
+    background-color: #FDE6E1;
     max-width: 1500px;
     width: 100%;
     padding: 15px;
@@ -128,4 +134,40 @@ ul.slider li:target{
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: juliette;
+    color: #7D716F;
+    font-size: 60px;
+}
+
+p{
+    text-align: center;
+    font-family: cherry;
+    font-size: 20px;
+    color: #9E908D;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FCA695;
+    font-family: elegant;
+    color: #7D716F;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales a{
+
+    color: #7D716F;
+    font-size: 40px;
+    padding-right: 40px;
+    text-decoration: none;
 }
