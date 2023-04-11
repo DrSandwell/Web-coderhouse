@@ -17,6 +17,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: auto;
+    height: auto;
 }
 
 header{
@@ -26,6 +28,7 @@ header{
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
+    position:relative;
 }
 
 .img{
@@ -70,13 +73,13 @@ ul a:hover{
 }
 
 main{
-    height: 100vh;
+    height: auto;
     background-color: #FDE6E1;
     margin-bottom: 80px;  
-}
 
+}
 .Carrusel{
-    margin:auto;
+    margin: auto;
     background-color: #FDE6E1;
     max-width: 1500px;
     width: 100%;
@@ -136,19 +139,69 @@ ul.slider li:target{
     border-radius: 100%;
 }
 
-h1{
+.Contenedor{
+    border: 3px solid black;
+    display: grid;
+    padding: 10px;
     text-align: center;
     font-family: juliette;
     color: #7D716F;
-    font-size: 60px;
+    font-size: 60px; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center ;
+    justify-items: center;
+    grid-template-areas:
+    "encabezado"    
+    "Anime"   
+    "Juegos";
 }
 
-p{
-    text-align: center;
-    font-family: cherry;
-    font-size: 20px;
-    color: #9E908D;
+h1{
+    grid-area: encabezado;
 }
+
+h2{
+    grid-area: h2;    
+}
+
+
+.Juegos{
+    grid-area: Juegos;
+    border: 3px solid black;
+    display: grid;
+    padding: 10px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center ;
+    justify-items: center;
+    grid-template-areas:  
+    "h2 h2 h2 h2"
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";  
+}
+
+.Anime{
+    grid-area: Anime;
+    border: 3px solid black;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center ;
+    justify-items: center;
+    grid-template-areas:
+    "h2 h2 h2 h2"
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8";     
+}
+
 
 
 footer{
@@ -160,8 +213,8 @@ footer{
     background-color: #FCA695;
     font-family: elegant;
     color: #7D716F;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 .redes-sociales a{
