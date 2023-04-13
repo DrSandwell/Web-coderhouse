@@ -158,6 +158,8 @@ ul.slider li:target{
     "encabezado"    
     "Anime"   
     "Juegos";
+    background-size: cover;
+    background-position: center;
 }
 
 h1{
@@ -175,15 +177,15 @@ h2{
     display: grid;
     padding: 10px; 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 400px 400px;
     justify-content: center;
     align-content: center;
     align-items: center ;
     justify-items: center;
     grid-template-areas:  
     "h2 h2 h2 h2"
-    "item1 item2 item3 item4"
-    "item5 item6 item7 item8";  
+    "id1 id2 id3 id4"
+    "id5 id6 id7 id8";  
 }
 
 .Anime{
@@ -192,16 +194,357 @@ h2{
     display: grid;
     padding: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 400px 400px;
+    gap: 30px;
     justify-content: center;
     align-content: center;
     align-items: center ;
     justify-items: center;
     grid-template-areas:
     "h2 h2 h2 h2"
-    "item1 item2 item3 item4"
-    "item5 item6 item7 item8";     
+    "id9 id10 id11 id12"
+    "id13 id14 id15 id16";   
 }
+
+/* ################# Cards ################# */
+
+
+.myCard {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    text-shadow: black 1px 0 10px;   
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 1em;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+    background-size: cover;
+}
+
+.frontSide{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+.backSide {
+    transform: rotateY(180deg);   
+}
+
+
+
+/* ################# ID de las imagenes Juegos ################# */
+
+/* Rosalina */
+
+#id1{
+    grid-area: id1;
+}
+
+#id1 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/rosalina.webp);    
+}
+
+#id1 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/Rosalina.png);
+}
+
+/* Bayonetta*/
+
+#id2{
+    grid-area: id2;
+}
+
+#id2 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/Bayoneta.avif);    
+}
+
+#id2 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/Bayoneta.png);
+    background-size: contain;
+}
+
+/* Jinx */
+#id3{
+    grid-area: id3;
+}
+
+#id3 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/Jinx.webp);    
+}
+
+#id3 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/jinx.png);
+}
+
+/* Mai */
+
+#id4{
+    grid-area: id4;
+}
+
+#id4 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/mai_shiranui_en_the_king_of_fighters_allstar.jpg_242310155.webp);
+}
+
+#id4 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/snk-removebg-preview.png);
+}
+
+/* Eivor */
+
+#id5{
+    grid-area: id5;
+}
+
+#id5 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/Eivor.webp);        
+}
+
+#id5 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/AC-removebg-preview.png);
+}
+
+/* Akali */
+
+#id6{
+    grid-area: id6;
+}
+
+#id6 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/Akali.jpg);    
+}
+
+#id6 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/akali-removebg-preview.png);
+}
+
+/* Kichou */
+
+#id7{
+    grid-area: id7;
+}
+
+#id7 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/Kichou.jpg);    
+}
+
+#id7 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/mobile-removebg-preview.png);
+}
+
+/* Sett */
+
+#id8{
+    grid-area: id8;
+}
+
+#id8 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/sett.jpg);    
+}
+
+#id8 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Juegos/sett_lol-removebg-preview.png);
+}
+
+/* ################# ID de las imagenes Anime ################# */
+
+/* Yoko */
+#id9{    
+    grid-area: id9;
+}
+#id9 .frontSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Card/yoko.jpg);    
+}
+
+#id9 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/TTGL.png);
+}
+
+/* Azula */
+
+#id10{    
+    grid-area: id10;
+}
+
+#id10 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/azula.avif);    
+}
+
+#id10 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/azula.png);
+}
+
+/* Rengoku */
+
+#id11{    
+    grid-area: id11;
+}
+
+#id11 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/rengoku.jpeg);    
+}
+
+#id11 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/rengoku.png);
+}
+
+/* Madara */
+
+#id12{    
+    grid-area: id12;
+}
+
+#id12 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/Naruto-Madara-Uchiha-se-convierte-en-un-personaje-de-Dragon-Ball-One-Piece-y-Kimetsu-no-Yaiba-en-este-fanart.webp);    
+}
+
+#id12 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/madara.png);
+}
+
+/* Draculaura */
+
+#id13{    
+    grid-area: id13;
+}
+
+#id13 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/d12aa16167b3145a9d330a1097f83d4e.jpg);    
+}
+
+#id13 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/highschool.png);
+}
+
+/* Usagi */
+
+#id14{    
+    grid-area: id14;
+}
+
+#id14 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/usagi.jpg);    
+}
+
+#id14 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/Usagi.png);
+}
+
+/* Faye */
+
+#id15{    
+    grid-area: id15;
+}
+
+#id15 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/Faye_Valentine.jpg);    
+}
+
+#id15 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/faye.png);
+}
+
+/* Mitsuri */
+
+#id16{    
+    grid-area: id16;
+}
+
+#id16 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/Mitsuri_Kanroji_-_Anime.webp);    
+}
+
+#id16 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/kimetsu.png);
+}
+
+/* Rengoku */
+
+#id11{    
+    grid-area: id11;
+}
+
+#id11 .frontSide,
+.frontSide::before{
+    background-image: url(/WEB/img/Card/rengoku.jpeg);    
+}
+
+#id11 .backSide,
+.frontSide::before {
+    background-image: url(/WEB/img/Anime/rengoku.png);
+}
+
 
 
 
@@ -225,3 +568,5 @@ footer{
     padding-right: 40px;
     text-decoration: none;
 }
+
+
