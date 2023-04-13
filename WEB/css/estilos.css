@@ -156,8 +156,8 @@ ul.slider li:target{
     justify-items: center;
     grid-template-areas:
     "encabezado"    
-    "Anime"   
-    "Juegos";
+    "Juegos"   
+    "Anime";
     background-size: cover;
     background-position: center;
 }
