@@ -1,16 +1,16 @@
 @font-face {
     font-family: cherry;
-    src: url(/WEB/font/Cherry\ Bird\ Demo.ttf);
+    src: url(/WEB/Fuentes/Texto/Cherry\ Bird\ Demo.ttf);
 }
 
 @font-face {
     font-family: elegant;
-    src: url(/WEB/font/Elegant\ Handwriting.otf);
+    src: url(/WEB/Fuentes/Texto/Elegant\ Handwriting.otf);
 }
 
 @font-face {
     font-family: juliette;
-    src: url(/WEB/font/Juliette.otf);
+    src: url(/WEB/Fuentes/Texto/Juliette.otf);
 }
 
 *{
@@ -143,11 +143,13 @@ ul.slider li:target{
 .Contenedor{
     border: 3px solid black;
     display: grid;
+    width: 100%;
     padding: 10px;
     text-align: center;
     font-family: juliette;
     color: #7D716F;
     font-size: 60px; 
+    letter-spacing: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr;
     justify-content: center;
@@ -174,14 +176,12 @@ h2{
 .Juegos{
     grid-area: Juegos;
     border: 3px solid black;
+    width: 100%;
     display: grid;
-    padding: 10px; 
+    padding: 45px; 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 400px 400px;
-    justify-content: center;
-    align-content: center;
-    align-items: center ;
-    justify-items: center;
+    gap: 45px;
     grid-template-areas:  
     "h2 h2 h2 h2"
     "id1 id2 id3 id4"
@@ -192,14 +192,11 @@ h2{
     grid-area: Anime;
     border: 3px solid black;
     display: grid;
-    padding: 10px;
+    width: 100%;
+    padding: 45px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 400px 400px;
-    gap: 30px;
-    justify-content: center;
-    align-content: center;
-    align-items: center ;
-    justify-items: center;
+    gap: 45px;    
     grid-template-areas:
     "h2 h2 h2 h2"
     "id9 id10 id11 id12"
@@ -248,7 +245,6 @@ h2{
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;    
@@ -567,6 +563,11 @@ footer{
     font-size: 40px;
     padding-right: 40px;
     text-decoration: none;
+}
+
+.redes-sociales a:hover{
+    color: white;
+    text-shadow: black 1px 0 10px;
 }
 
 
