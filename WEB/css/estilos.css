@@ -1,16 +1,16 @@
 @font-face {
     font-family: cherry;
-    src: url(/WEB/Fuentes/Texto/Cherry\ Bird\ Demo.ttf);
+    src: url(WEB/Fuentes/Texto/Cherry\ Bird\ Demo.ttf);
 }
 
 @font-face {
     font-family: elegant;
-    src: url(/WEB/Fuentes/Texto/Elegant\ Handwriting.otf);
+    src: url(WEB/Fuentes/Texto/Elegant\ Handwriting.otf);
 }
 
 @font-face {
     font-family: juliette;
-    src: url(/WEB/Fuentes/Texto/Juliette.otf);
+    src: url(WEB/Fuentes/Texto/Juliette.otf);
 }
 
 *{
@@ -277,12 +277,12 @@ h2{
 
 #id1 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/rosalina.webp);    
+    background-image: url(./WEB/img/Card/rosalina.webp);    
 }
 
 #id1 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/Rosalina.png);
+    background-image: url(./WEB/img/Juegos/Rosalina.png);
 }
 
 /* Bayonetta*/
@@ -293,12 +293,12 @@ h2{
 
 #id2 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/Bayoneta.avif);    
+    background-image: url(./WEB/img/Card/Bayoneta.avif);    
 }
 
 #id2 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/Bayoneta.png);
+    background-image: url(./WEB/img/Juegos/Bayoneta.png);
     background-size: contain;
 }
 
@@ -309,12 +309,12 @@ h2{
 
 #id3 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/Jinx.webp);    
+    background-image: url(./WEB/img/Card/Jinx.webp);    
 }
 
 #id3 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/jinx.png);
+    background-image: url(./WEB/img/Juegos/jinx.png);
 }
 
 /* Mai */
@@ -325,12 +325,12 @@ h2{
 
 #id4 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/mai_shiranui_en_the_king_of_fighters_allstar.jpg_242310155.webp);
+    background-image: url(./WEB/img/Card/mai_shiranui_en_the_king_of_fighters_allstar.jpg_242310155.webp);
 }
 
 #id4 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/snk-removebg-preview.png);
+    background-image: url(./WEB/img/Juegos/snk-removebg-preview.png);
 }
 
 /* Eivor */
@@ -341,12 +341,12 @@ h2{
 
 #id5 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/Eivor.webp);        
+    background-image: url(./WEB/img/Card/Eivor.webp);        
 }
 
 #id5 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/AC-removebg-preview.png);
+    background-image: url(./WEB/img/Juegos/AC-removebg-preview.png);
 }
 
 /* Akali */
@@ -357,12 +357,12 @@ h2{
 
 #id6 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/Akali.jpg);    
+    background-image: url(./WEB/img/Card/Akali.jpg);    
 }
 
 #id6 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/akali-removebg-preview.png);
+    background-image: url(./WEB/img/Juegos/akali-removebg-preview.png);
 }
 
 /* Kichou */
@@ -373,12 +373,12 @@ h2{
 
 #id7 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/Kichou.jpg);    
+    background-image: url(./WEB/img/Card/Kichou.jpg);    
 }
 
 #id7 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/mobile-removebg-preview.png);
+    background-image: url(./WEB/img/Juegos/mobile-removebg-preview.png);
 }
 
 /* Sett */
@@ -389,12 +389,12 @@ h2{
 
 #id8 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/sett.jpg);    
+    background-image: url(./WEB/img/Card/sett.jpg);    
 }
 
 #id8 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Juegos/sett_lol-removebg-preview.png);
+    background-image: url(./WEB/img/Juegos/sett_lol-removebg-preview.png);
 }
 
 /* ################# ID de las imagenes Anime ################# */
@@ -405,12 +405,12 @@ h2{
 }
 #id9 .frontSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Card/yoko.jpg);    
+    background-image: url(./WEB/img/Card/yoko.jpg);    
 }
 
 #id9 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/TTGL.png);
+    background-image: url(./WEB/img/Anime/TTGL.png);
 }
 
 /* Azula */
@@ -421,12 +421,12 @@ h2{
 
 #id10 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/azula.avif);    
+    background-image: url(./WEB/img/Card/azula.avif);    
 }
 
 #id10 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/azula.png);
+    background-image: url(./WEB/img/Anime/azula.png);
 }
 
 /* Rengoku */
@@ -437,12 +437,12 @@ h2{
 
 #id11 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/rengoku.jpeg);    
+    background-image: url(./WEB/img/Card/rengoku.jpeg);    
 }
 
 #id11 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/rengoku.png);
+    background-image: url(./WEB/img/Anime/rengoku.png);
 }
 
 /* Madara */
@@ -453,12 +453,12 @@ h2{
 
 #id12 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/Naruto-Madara-Uchiha-se-convierte-en-un-personaje-de-Dragon-Ball-One-Piece-y-Kimetsu-no-Yaiba-en-este-fanart.webp);    
+    background-image: url(./WEB/img/Card/Naruto-Madara-Uchiha-se-convierte-en-un-personaje-de-Dragon-Ball-One-Piece-y-Kimetsu-no-Yaiba-en-este-fanart.webp);    
 }
 
 #id12 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/madara.png);
+    background-image: url(./WEB/img/Anime/madara.png);
 }
 
 /* Draculaura */
@@ -469,12 +469,12 @@ h2{
 
 #id13 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/d12aa16167b3145a9d330a1097f83d4e.jpg);    
+    background-image: url(./WEB/img/Card/d12aa16167b3145a9d330a1097f83d4e.jpg);    
 }
 
 #id13 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/highschool.png);
+    background-image: url(./WEB/img/Anime/highschool.png);
 }
 
 /* Usagi */
@@ -485,12 +485,12 @@ h2{
 
 #id14 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/usagi.jpg);    
+    background-image: url(./WEB/img/Card/usagi.jpg);    
 }
 
 #id14 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/Usagi.png);
+    background-image: url(./WEB/img/Anime/Usagi.png);
 }
 
 /* Faye */
@@ -501,12 +501,12 @@ h2{
 
 #id15 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/Faye_Valentine.jpg);    
+    background-image: url(./WEB/img/Card/Faye_Valentine.jpg);    
 }
 
 #id15 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/faye.png);
+    background-image: url(./WEB/img/Anime/faye.png);
 }
 
 /* Mitsuri */
@@ -517,12 +517,12 @@ h2{
 
 #id16 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/Mitsuri_Kanroji_-_Anime.webp);    
+    background-image: url(./WEB/img/Card/Mitsuri_Kanroji_-_Anime.webp);    
 }
 
 #id16 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/kimetsu.png);
+    background-image: url(./WEB/img/Anime/kimetsu.png);
 }
 
 /* Rengoku */
@@ -533,12 +533,12 @@ h2{
 
 #id11 .frontSide,
 .frontSide::before{
-    background-image: url(/WEB/img/Card/rengoku.jpeg);    
+    background-image: url(./WEB/img/Card/rengoku.jpeg);    
 }
 
 #id11 .backSide,
 .frontSide::before {
-    background-image: url(/WEB/img/Anime/rengoku.png);
+    background-image: url(./WEB/img/Anime/rengoku.png);
 }
 
 
