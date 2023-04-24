@@ -91,11 +91,11 @@ ul a:hover{
 main{
     height: auto;
     background-color: #FDE6E1;
-    margin-bottom: 80px;  
+    margin-bottom: 60px;  
 
 }
 
-@media (max-width: 480px) { 
+@media only screen and (max-width: 480px) { 
 
     .logo{
         font-size: 30px;
@@ -134,7 +134,10 @@ main{
     
     #check:checked ~ ul{
         left: 0;
+        position: relative;
+        transition: all 0.5s;
     }
+    
 }
 /* Crear banners de tamaño 1500px ancho por 415px alto */
 
@@ -275,7 +278,7 @@ h2{
     width: 400px;
     height: 400px;
     perspective: 1000px;
-    text-shadow: black 1px 0 10px;   
+    text-shadow: 1px 1px 1px black;   
 }
 
 .title {
@@ -610,21 +613,23 @@ h2{
 
 footer{
     position: fixed;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: #FCA695;
     font-family: elegant;
     color: #7D716F;
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .redes-sociales a{
 
     color: #7D716F;
-    font-size: 40px;
+    font-size: 35px;
     padding-right: 40px;
     text-decoration: none;
 }
@@ -633,5 +638,82 @@ footer{
     color: white;
     text-shadow: black 1px 0 10px;
 }
+/* .Juegos{
+    grid-area: Juegos;
+    border: 3px solid black;
+    width: 100%;
+    display: grid;
+    padding: 45px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 400px 400px;
+    gap: 45px;
+    grid-template-areas:  
+    "h2 h2 h2 h2"
+    "id1 id2 id3 id4"
+    "id5 id6 id7 id8";  
+}
+
+.Anime{
+    grid-area: Anime;
+    border: 3px solid black;
+    display: grid;
+    width: 100%;
+    padding: 45px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 400px 400px;
+    gap: 45px;    
+    grid-template-areas:
+    "h2 h2 h2 h2"
+    "id9 id10 id11 id12"
+    "id13 id14 id15 id16";   
+} */
 
 
+
+@media only screen and (max-width: 480px){ 
+
+    .Contenedor{        
+        padding: 5px;
+        font-size: 28px;
+    }
+    h2{
+        grid-area: h2; 
+        font-size: 70px;   
+    }
+
+    .Juegos{
+    grid-template-columns: 1fr 1fr;
+    padding:10px;
+    grid-template-rows: 100px repeat(4, 200px);
+    gap: 10px;
+    grid-template-areas:
+    "h2 h2"
+    "id1 id2" 
+    "id3 id4"
+    "id5 id6"
+    "id7 id8";
+    }
+
+    
+    .Anime{
+        grid-template-columns: 1fr 1fr;
+        padding:10px;
+        grid-template-rows: 100px repeat(4, 200px);
+        gap: 10px;
+        grid-template-areas:
+        "h2 h2"
+        "id9 id10" 
+        "id11 id12"
+        "id13 id14"
+        "id15 id16";
+        }
+
+    .myCard {
+        background-color: transparent;
+        width: 180px;
+        height: 180px;
+        perspective: 1000px;
+        text-shadow: black 1px 0 10px;   
+    }
+
+}
