@@ -21,13 +21,18 @@
     height: auto;
 }
 
+body{
+    background: #FDE6E1;
+}
+
 header{
     height: 80px;
     width: 100%;
     background-color: #D88F80;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 3;
 }
 
@@ -36,7 +41,7 @@ header{
     width: 80px;
     float:left;
     position: relative;
-    padding: 5px;
+    padding: 0;
 }
 
 .logo{
@@ -48,12 +53,12 @@ header{
     line-height: 80px;
 }
 
-ul{
+nav ul{
     float: right;
     list-style: none;
 }
 
-ul li{
+nav ul li{
     display: inline-block;
     text-transform: capitalize;    
     line-height: 80px;
@@ -92,7 +97,6 @@ ul a.active, ul a:hover{
 
 main{
     height: auto;
-    background-color: #FDE6E1;
     margin-bottom: 60px;  
 
 }
@@ -234,12 +238,12 @@ ul.slider li:target{
     background-position: center;
 }
 
-h1{
+.Contenedor h1{
     grid-area: encabezado;
     font-size: 100px;
 }
 
-h2{
+.Contenedor h2{
     grid-area: h2; 
     font-size: 80px;   
 }
@@ -613,6 +617,121 @@ h2{
     background-image: url(../img/Anime/rengoku.png);
 }
 
+/* Pagina Contactos */
+
+.Hello{    
+    background-image: url(../img/v1013-p-0001a.jpg);
+    background-size: cover;
+}
+
+.Contacto{    
+    font-family: cherry;
+    color: #615553;
+    padding: 1.5em;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.Contacto h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: Juliette;
+}
+
+.Grid-Contacto{
+    box-shadow: 0 0 20px 0 #7D716F;     
+}
+
+.Grid-Contacto > * {
+    padding: 1em;
+}
+
+.Formulario{
+    background-color:#E3C5BF;
+}
+
+.Formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Formulario form .block{
+    grid-column: 1/3;
+}
+
+.Formulario form p{
+    margin: 0;
+    padding: 1em;
+
+}
+
+.Formulario form button,
+.Formulario form input,
+.Formulario form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #7A5148;
+}
+
+.Formulario form .Archivos{
+    border-bottom: none;
+}
+
+.Formulario form button{
+    background-color: #7D716F;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color:#E3C5BF ;
+}
+
+.Formulario form button:hover,
+.Formulario form button:focus{
+    background:  #E8D4D1;     
+    color: #808080;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.Info{
+    background-color: #7A5148;
+}
+
+.Info ul,
+.Info h2{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #E8D4D1;
+}
+
+.Info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.Info ul li{
+    padding: .3em;
+}
+
+@media (min-width: 700px){
+    .Grid-Contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .Grid-Contacto > * {
+        padding: 2em;
+    }
+    
+    .Info ul,
+    .Info h2{
+        padding: 1em;
+    }
+}
 
 
 
@@ -643,35 +762,6 @@ footer{
     color: white;
     text-shadow: black 1px 0 10px;
 }
-/* .Juegos{
-    grid-area: Juegos;
-    border: 3px solid black;
-    width: 100%;
-    display: grid;
-    padding: 45px; 
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 400px 400px;
-    gap: 45px;
-    grid-template-areas:  
-    "h2 h2 h2 h2"
-    "id1 id2 id3 id4"
-    "id5 id6 id7 id8";  
-}
-
-.Anime{
-    grid-area: Anime;
-    border: 3px solid black;
-    display: grid;
-    width: 100%;
-    padding: 45px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 400px 400px;
-    gap: 45px;    
-    grid-template-areas:
-    "h2 h2 h2 h2"
-    "id9 id10 id11 id12"
-    "id13 id14 id15 id16";   
-} */
 
 
 
@@ -721,4 +811,13 @@ footer{
         text-shadow: black 1px 0 10px;   
     }
 
+}
+
+.Construccion{
+    background-image: url(../img/Pagina-en-construccion.jpg);
+    height: 100vh;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
