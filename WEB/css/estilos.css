@@ -51,6 +51,7 @@ header{
     font-family: elegant;
     font-size: 40px;
     line-height: 80px;
+    color: #615553;
 }
 
 nav ul{
@@ -110,7 +111,7 @@ main{
         display: block;
     }
 
-    ul{
+    header nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -122,13 +123,13 @@ main{
 
     }
     
-    ul li{
+    header nav ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    ul li a{
+    header nav ul li a{
         font-size: 40px;
     }
 
@@ -706,6 +707,7 @@ ul.slider li:target{
     text-align: center;
     margin: 0 0 1rem 0;
     color: #E8D4D1;
+    letter-spacing: 1px;
 }
 
 .Info ul{
