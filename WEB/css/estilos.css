@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Paleta de colores */
 @font-face {
   font-family: cherry;
   src: url(../Fuentes/Texto/Cherry\ Bird\ Demo.ttf);
@@ -12,6 +11,7 @@
   font-family: juliette;
   src: url(../Fuentes/Texto/Juliette.otf);
 }
+/* Paleta de colores */
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +142,7 @@ main {
   }
 }
 /* Crear banners de tamaño 1500px ancho por 415px alto */
-.Contenedor {
+.Inicio {
   border: 3px solid black;
   display: grid;
   width: 100%;
@@ -162,15 +162,15 @@ main {
   background-size: cover;
   background-position: center;
 }
-.Contenedor h1 {
+.Inicio h1 {
   grid-area: encabezado;
   font-size: 100px;
 }
-.Contenedor h2 {
+.Inicio h2 {
   grid-area: h2;
   font-size: 80px;
 }
-.Contenedor .Juegos {
+.Inicio .Juegos {
   grid-area: Juegos;
   border: 3px solid black;
   width: 100%;
@@ -181,7 +181,7 @@ main {
   gap: 45px;
   grid-template-areas: "h2 h2 h2 h2" "id1 id2 id3 id4" "id5 id6 id7 id8";
 }
-.Contenedor .Anime {
+.Inicio .Anime {
   grid-area: Anime;
   border: 3px solid black;
   display: grid;
@@ -253,14 +253,10 @@ main {
 #id1 {
   grid-area: id1;
 }
-
-#id1 .frontSide,
-.frontSide::before {
+#id1 .frontSide, #id1::before {
   background-image: url(../img/Card/rosalina.webp);
 }
-
-#id1 .backSide,
-.frontSide::before {
+#id1 .backSide, #id1::before {
   background-image: url(../img/Juegos/Rosalina.png);
 }
 
@@ -268,14 +264,10 @@ main {
 #id2 {
   grid-area: id2;
 }
-
-#id2 .frontSide,
-.frontSide::before {
+#id2 .frontSide, #id2::before {
   background-image: url(../img/Card/Bayoneta.avif);
 }
-
-#id2 .backSide,
-.frontSide::before {
+#id2 .backSide, #id2::before {
   background-image: url(../img/Juegos/Bayoneta.png);
   background-size: contain;
 }
@@ -284,14 +276,10 @@ main {
 #id3 {
   grid-area: id3;
 }
-
-#id3 .frontSide,
-.frontSide::before {
+#id3 .frontSide, #id3::before {
   background-image: url(../img/Card/Jinx.webp);
 }
-
-#id3 .backSide,
-.frontSide::before {
+#id3 .backSide, #id3::before {
   background-image: url(../img/Juegos/jinx.png);
 }
 
@@ -299,14 +287,10 @@ main {
 #id4 {
   grid-area: id4;
 }
-
-#id4 .frontSide,
-.frontSide::before {
+#id4 .frontSide, #id4::before {
   background-image: url(../img/Card/mai_shiranui_en_the_king_of_fighters_allstar.jpg_242310155.webp);
 }
-
-#id4 .backSide,
-.frontSide::before {
+#id4 .backSide, #id4::before {
   background-image: url(../img/Juegos/snk-removebg-preview.png);
 }
 
@@ -314,14 +298,10 @@ main {
 #id5 {
   grid-area: id5;
 }
-
-#id5 .frontSide,
-.frontSide::before {
+#id5 .frontSide, #id5::before {
   background-image: url(../img/Card/Eivor.webp);
 }
-
-#id5 .backSide,
-.frontSide::before {
+#id5 .backSide, #id5::before {
   background-image: url(../img/Juegos/AC-removebg-preview.png);
 }
 
@@ -329,14 +309,10 @@ main {
 #id6 {
   grid-area: id6;
 }
-
-#id6 .frontSide,
-.frontSide::before {
+#id6 .frontSide, #id6::before {
   background-image: url(../img/Card/Akali.jpg);
 }
-
-#id6 .backSide,
-.frontSide::before {
+#id6 .backSide, #id6::before {
   background-image: url(../img/Juegos/akali-removebg-preview.png);
 }
 
@@ -344,14 +320,10 @@ main {
 #id7 {
   grid-area: id7;
 }
-
-#id7 .frontSide,
-.frontSide::before {
+#id7 .frontSide, #id7::before {
   background-image: url(../img/Card/Kichou.jpg);
 }
-
-#id7 .backSide,
-.frontSide::before {
+#id7 .backSide, #id7::before {
   background-image: url(../img/Juegos/mobile-removebg-preview.png);
 }
 
@@ -359,14 +331,10 @@ main {
 #id8 {
   grid-area: id8;
 }
-
-#id8 .frontSide,
-.frontSide::before {
+#id8 .frontSide, #id8::before {
   background-image: url(../img/Card/sett.jpg);
 }
-
-#id8 .backSide,
-.frontSide::before {
+#id8 .backSide, #id8::before {
   background-image: url(../img/Juegos/sett_lol-removebg-preview.png);
 }
 
@@ -375,14 +343,10 @@ main {
 #id9 {
   grid-area: id9;
 }
-
-#id9 .frontSide,
-.frontSide::before {
+#id9 .frontSide, #id9::before {
   background-image: url(../img/Card/yoko.jpg);
 }
-
-#id9 .backSide,
-.frontSide::before {
+#id9 .backSide, #id9::before {
   background-image: url(../img/Anime/TTGL.png);
 }
 
@@ -390,14 +354,10 @@ main {
 #id10 {
   grid-area: id10;
 }
-
-#id10 .frontSide,
-.frontSide::before {
+#id10 .frontSide, #id10::before {
   background-image: url(../img/Card/azula.avif);
 }
-
-#id10 .backSide,
-.frontSide::before {
+#id10 .backSide, #id10::before {
   background-image: url(../img/Anime/azula.png);
 }
 
@@ -405,14 +365,10 @@ main {
 #id11 {
   grid-area: id11;
 }
-
-#id11 .frontSide,
-.frontSide::before {
+#id11 .frontSide, #id11::before {
   background-image: url(../img/Card/rengoku.jpeg);
 }
-
-#id11 .backSide,
-.frontSide::before {
+#id11 .backSide, #id11::before {
   background-image: url(../img/Anime/rengoku.png);
 }
 
@@ -420,14 +376,10 @@ main {
 #id12 {
   grid-area: id12;
 }
-
-#id12 .frontSide,
-.frontSide::before {
+#id12 .frontSide, #id12::before {
   background-image: url(../img/Card/Naruto-Madara-Uchiha-se-convierte-en-un-personaje-de-Dragon-Ball-One-Piece-y-Kimetsu-no-Yaiba-en-este-fanart.webp);
 }
-
-#id12 .backSide,
-.frontSide::before {
+#id12 .backSide, #id12::before {
   background-image: url(../img/Anime/madara.png);
 }
 
@@ -435,14 +387,10 @@ main {
 #id13 {
   grid-area: id13;
 }
-
-#id13 .frontSide,
-.frontSide::before {
+#id13 .frontSide, #id13::before {
   background-image: url(../img/Card/d12aa16167b3145a9d330a1097f83d4e.jpg);
 }
-
-#id13 .backSide,
-.frontSide::before {
+#id13 .backSide, #id13::before {
   background-image: url(../img/Anime/highschool.png);
 }
 
@@ -450,14 +398,10 @@ main {
 #id14 {
   grid-area: id14;
 }
-
-#id14 .frontSide,
-.frontSide::before {
+#id14 .frontSide, #id14::before {
   background-image: url(../img/Card/usagi.jpg);
 }
-
-#id14 .backSide,
-.frontSide::before {
+#id14 .backSide, #id14::before {
   background-image: url(../img/Anime/Usagi.png);
 }
 
@@ -465,14 +409,10 @@ main {
 #id15 {
   grid-area: id15;
 }
-
-#id15 .frontSide,
-.frontSide::before {
+#id15 .frontSide, #id15::before {
   background-image: url(../img/Card/Faye_Valentine.jpg);
 }
-
-#id15 .backSide,
-.frontSide::before {
+#id15 .backSide, #id15::before {
   background-image: url(../img/Anime/faye.png);
 }
 
@@ -480,36 +420,17 @@ main {
 #id16 {
   grid-area: id16;
 }
-
-#id16 .frontSide,
-.frontSide::before {
+#id16 .frontSide, #id16::before {
   background-image: url(../img/Card/Mitsuri_Kanroji_-_Anime.webp);
 }
-
-#id16 .backSide,
-.frontSide::before {
+#id16 .backSide, #id16::before {
   background-image: url(../img/Anime/kimetsu.png);
-}
-
-/* Rengoku */
-#id11 {
-  grid-area: id11;
-}
-
-#id11 .frontSide,
-.frontSide::before {
-  background-image: url(../img/Card/rengoku.jpeg);
-}
-
-#id11 .backSide,
-.frontSide::before {
-  background-image: url(../img/Anime/rengoku.png);
 }
 
 /* Pagina Contactos */
 .Contacto {
   font-family: cherry;
-  color: #615553;
+  color: #3c6d6f;
   padding: 1.5em;
   max-width: 1300px;
   margin-left: auto;
@@ -518,7 +439,7 @@ main {
 .Contacto h1 {
   text-align: center;
   font-size: 4em;
-  font-family: Juliette;
+  font-family: juliette;
 }
 .Contacto .Grid-Contacto > * {
   padding: 1em;
@@ -527,7 +448,7 @@ main {
   box-shadow: 0 0 20px 0 #7D716F;
 }
 .Contacto .Formulario {
-  background-color: #E3C5BF;
+  background-color: #ffe0dd;
 }
 .Contacto .Formulario form {
   display: grid;
@@ -556,26 +477,26 @@ main {
   border-bottom: none;
 }
 .Contacto .Formulario form button {
-  background-color: #7D716F;
+  background-color: #3c6d6f;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
-  color: #E3C5BF;
+  color: #ffd5cf;
 }
 .Contacto .Formulario form button:hover, .Contacto .Formulario form button:focus {
-  background: #E8D4D1;
-  color: #808080;
+  background: #66BABD;
+  color: #3c6d6f;
   transition: background-color 1s ease-out;
   outline: 0;
 }
 .Contacto .Info {
-  background-color: #7A5148;
+  background-color: #3c6d6f;
 }
 .Contacto .Info ul,
 .Contacto .Info h2 {
   text-align: center;
   margin: 0 0 1rem 0;
-  color: #E8D4D1;
+  color: #ffe0dd;
   letter-spacing: 1px;
 }
 .Contacto .Info ul {
@@ -599,6 +520,7 @@ main {
     padding: 1em;
   }
 }
+/* Footer */
 footer {
   position: fixed;
   display: flex;

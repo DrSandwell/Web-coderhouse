@@ -1,0 +1,63 @@
+.Inicio {
+    border: 3px solid black;
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: $Font1;
+    color: $ColorLetra;
+    font-size: 60px;
+    letter-spacing: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+        "encabezado"
+        "Juegos"
+        "Anime";
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        grid-area: encabezado;
+        font-size: 100px;
+    }
+
+    h2 {
+        grid-area: h2;
+        font-size: 80px;
+    }
+
+    .Juegos {
+        grid-area: Juegos;
+        border: 3px solid black;
+        width: 100%;
+        display: grid;
+        padding: 45px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 400px 400px;
+        gap: 45px;
+        grid-template-areas:
+            "h2 h2 h2 h2"
+            "id1 id2 id3 id4"
+            "id5 id6 id7 id8";
+    }
+
+    .Anime {
+        grid-area: Anime;
+        border: 3px solid black;
+        display: grid;
+        width: 100%;
+        padding: 45px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 400px 400px;
+        gap: 45px;
+        grid-template-areas:
+            "h2 h2 h2 h2"
+            "id9 id10 id11 id12"
+            "id13 id14 id15 id16";
+    }
+}

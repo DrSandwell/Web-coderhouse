@@ -1,0 +1,287 @@
+/* ################# ID de las imagenes Juegos ################# */
+
+/* Rosalina */
+
+#id1 {
+    grid-area: id1;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/rosalina.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/Rosalina.png);
+    }
+}
+
+
+
+/* Bayonetta*/
+
+#id2 {
+    grid-area: id2;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Bayoneta.avif);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/Bayoneta.png);
+        background-size: contain;
+    }
+}
+
+
+
+/* Jinx */
+#id3 {
+    grid-area: id3;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Jinx.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/jinx.png);
+    }
+}
+
+
+
+/* Mai */
+
+#id4 {
+    grid-area: id4;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/mai_shiranui_en_the_king_of_fighters_allstar.jpg_242310155.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/snk-removebg-preview.png);
+    }
+}
+
+
+
+/* Eivor */
+
+#id5 {
+    grid-area: id5;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Eivor.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/AC-removebg-preview.png);
+    }
+}
+
+
+
+/* Akali */
+
+#id6 {
+    grid-area: id6;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Akali.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/akali-removebg-preview.png);
+    }
+
+}
+
+
+/* Kichou */
+
+#id7 {
+    grid-area: id7;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Kichou.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/mobile-removebg-preview.png);
+    }
+}
+
+
+
+/* Sett */
+
+#id8 {
+    grid-area: id8;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/sett.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Juegos/sett_lol-removebg-preview.png);
+    }
+}
+
+
+
+/* ################# ID de las imagenes Anime ################# */
+
+/* Yoko */
+#id9 {
+    grid-area: id9;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/yoko.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/TTGL.png);
+    }
+
+}
+
+
+/* Azula */
+
+#id10 {
+    grid-area: id10;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/azula.avif);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/azula.png);
+    }
+}
+
+
+/* Rengoku */
+
+#id11 {
+    grid-area: id11;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/rengoku.jpeg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/rengoku.png);
+    }
+}
+
+
+
+/* Madara */
+
+#id12 {
+    grid-area: id12;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Naruto-Madara-Uchiha-se-convierte-en-un-personaje-de-Dragon-Ball-One-Piece-y-Kimetsu-no-Yaiba-en-este-fanart.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/madara.png);
+    }
+}
+
+
+
+/* Draculaura */
+
+#id13 {
+    grid-area: id13;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/d12aa16167b3145a9d330a1097f83d4e.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/highschool.png);
+    }
+}
+
+
+/* Usagi */
+
+#id14 {
+    grid-area: id14;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/usagi.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/Usagi.png);
+    }
+}
+
+
+
+/* Faye */
+
+#id15 {
+    grid-area: id15;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Faye_Valentine.jpg);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/faye.png);
+    }
+}
+
+
+
+/* Mitsuri */
+
+#id16 {
+    grid-area: id16;
+
+    .frontSide,
+    &::before {
+        background-image: url(../img/Card/Mitsuri_Kanroji_-_Anime.webp);
+    }
+
+    .backSide,
+    &::before {
+        background-image: url(../img/Anime/kimetsu.png);
+    }
+}
+

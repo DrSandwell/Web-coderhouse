@@ -1,0 +1,73 @@
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: $ColorBanner;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    .img {
+        height: auto;
+        width: 80px;
+        float: left;
+        position: relative;
+        padding: 0;
+    }
+
+    .logo {
+        float: left;
+        text-transform: uppercase;
+        text-shadow: 0 0 3px;
+        font-family: $Font3;
+        font-size: 40px;
+        line-height: 80px;
+        color: $ColorLetra;
+    }
+
+    nav ul {
+        float: right;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            text-transform: capitalize;
+            line-height: 80px;
+            margin: 0 5px
+        }
+
+        a {
+            color: $ColorLetra;
+            font-family: $Font3;
+            text-decoration: none;
+            font-size: 36px;
+            padding: 7px 13px;
+
+        }
+
+        a.active,
+        a:hover {
+            color: $ColorExtra;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: $ColorLetra;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+
+}
