@@ -58,63 +58,13 @@ main {
 
 }
 
-@media only screen and (max-width: 480px) {
 
-    header {
-
-
-        .logo {
-            font-size: 30px;
-        }
-
-        .checkbtn {
-            display: block;
-        }
-
-        nav ul {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: $ColorExtra;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-
-            li {
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-
-                a {
-                    font-size: 40px;
-                }
-            }
-
-            li a:hover,
-            ul a.active {
-                background: none;
-                color: $ColorExtra;
-                text-shadow: 1px 1px 2px #615553;
-            }
-
-        }
-
-        #check:checked~ul {
-            left: 0;
-            position: fixed;
-            top: 80px;
-            bottom: 0;
-            right: 0;
-            z-index: 2;
-        }
-    }
-
-}
 
 /* Crear banners de tamaño 1500px ancho por 415px alto */
 
 @import "_Inicio.scss";
+
+@import "_About-me.scss";
 
 /* ################# Cards ################# */
 
@@ -192,6 +142,60 @@ main {
 
 @media only screen and (max-width: 700px) {
 
+    header {
+
+
+        .logo {
+            font-size: 30px;
+        }
+
+        .checkbtn {
+            display: block;
+        }
+
+        nav ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: $ColorExtra;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+
+            li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+
+                a {
+                    font-size: 40px;
+                }
+            }
+
+            li a:hover,
+            ul a.active {
+                background: none;
+                color: $ColorExtra;
+                text-shadow: 1px 1px 2px #615553;
+            }
+
+        }
+
+        #check:checked~ul {
+            left: 0;
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
     .Inicio {
         padding: 5px;
         font-size: 28px;
@@ -239,3 +243,4 @@ main {
     }   
 
 }
+
