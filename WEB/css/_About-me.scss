@@ -1,0 +1,61 @@
+.Daki {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 224, 221, 0.4);
+
+    .col {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: justify;
+
+        img {
+            max-width: 400px;
+            height: auto;
+            margin: 20px;
+            flex-basis: 33.33%;
+            border-radius: 15px;
+        }
+
+        p {
+            flex-basis: 66.67%;
+            text-align: center;
+            font-size: 50px;
+            font-family: $Font1;
+            color: $ColorLetra;
+            text-shadow: 0 0 5px white;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Daki {
+
+        .col {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+
+            p {
+                flex-basis: 100%;
+                text-align: center;
+                letter-spacing: normal;
+                text-shadow: none;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    #Daki {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,55 @@
+#carousel-inicio {
+    .carousel-item:nth-of-type(1) img {
+        content: url(../img/banner\ inicio1.jpg);
+    }
+
+    .carousel-item:nth-of-type(2) img {
+        content: url(../img/banner\ inicio2.jpg);
+    }
+
+    .carousel-item:nth-of-type(3) img {
+        content: url(../img/banner\ inicio3.jpg);
+    }
+
+    @media only screen and (max-width: 700px) {
+        .carousel-item:nth-of-type(1) img {
+            content: url(../img/Mobile-Banner2.jpg);
+        }
+
+        .carousel-item:nth-of-type(2) img {
+            content: url(../img/Mobile-Banner1.jpg);
+        }
+
+        .carousel-item:nth-of-type(3) img {
+            content: url(../img/Mobile-Banner3.jpg);
+        }
+    }
+}
+
+#carousel-aboutME {
+    .carousel-item:nth-of-type(1) img {
+        content: url(../img/banner1.jpg);
+    }
+
+    .carousel-item:nth-of-type(2) img {
+        content: url(../img/banner2.jpg);
+    }
+
+    .carousel-item:nth-of-type(3) img {
+        content: url(../img/banner3.jpg);
+    }
+
+    @media only screen and (max-width: 700px) {
+        .carousel-item:nth-of-type(1) img {
+            content: url(../img/mobilebanner1.jpg);
+        }
+
+        .carousel-item:nth-of-type(2) img {
+            content: url(../img/mobilebanner2.jpg);
+        }
+
+        .carousel-item:nth-of-type(3) img {
+            content: url(../img/mobilebanner3.jpg);
+        }
+    }
+}

@@ -153,6 +153,101 @@ main {
   grid-template-areas: "h2 h2 h2 h2" "id9 id10 id11 id12" "id13 id14 id15 id16";
 }
 
+.Daki {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 224, 221, 0.4);
+}
+.Daki .col {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: justify;
+}
+.Daki .col img {
+  max-width: 400px;
+  height: auto;
+  margin: 20px;
+  flex-basis: 33.33%;
+  border-radius: 15px;
+}
+.Daki .col p {
+  flex-basis: 66.67%;
+  text-align: center;
+  font-size: 50px;
+  font-family: juliette;
+  color: #3c6d6f;
+  text-shadow: 0 0 5px white;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Daki .col {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Daki .col img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .Daki .col p {
+    flex-basis: 100%;
+    text-align: center;
+    letter-spacing: normal;
+    text-shadow: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  #Daki {
+    flex-direction: column-reverse;
+  }
+}
+#carousel-inicio .carousel-item:nth-of-type(1) img {
+  content: url(../img/banner\ inicio1.jpg);
+}
+#carousel-inicio .carousel-item:nth-of-type(2) img {
+  content: url(../img/banner\ inicio2.jpg);
+}
+#carousel-inicio .carousel-item:nth-of-type(3) img {
+  content: url(../img/banner\ inicio3.jpg);
+}
+@media only screen and (max-width: 700px) {
+  #carousel-inicio .carousel-item:nth-of-type(1) img {
+    content: url(../img/Mobile-Banner2.jpg);
+  }
+  #carousel-inicio .carousel-item:nth-of-type(2) img {
+    content: url(../img/Mobile-Banner1.jpg);
+  }
+  #carousel-inicio .carousel-item:nth-of-type(3) img {
+    content: url(../img/Mobile-Banner3.jpg);
+  }
+}
+
+#carousel-aboutME .carousel-item:nth-of-type(1) img {
+  content: url(../img/banner1.jpg);
+}
+#carousel-aboutME .carousel-item:nth-of-type(2) img {
+  content: url(../img/banner2.jpg);
+}
+#carousel-aboutME .carousel-item:nth-of-type(3) img {
+  content: url(../img/banner3.jpg);
+}
+@media only screen and (max-width: 700px) {
+  #carousel-aboutME .carousel-item:nth-of-type(1) img {
+    content: url(../img/mobilebanner1.jpg);
+  }
+  #carousel-aboutME .carousel-item:nth-of-type(2) img {
+    content: url(../img/mobilebanner2.jpg);
+  }
+  #carousel-aboutME .carousel-item:nth-of-type(3) img {
+    content: url(../img/mobilebanner3.jpg);
+  }
+}
+
 /* ################# Cards ################# */
 .myCard {
   background-color: transparent;
