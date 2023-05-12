@@ -1,0 +1,86 @@
+.Clientes {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 224, 221, 0.4);
+
+    .col {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: justify;
+
+        .Resena {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                flex-basis: 33.33%;
+                text-align: center;
+                font-size: 50px;
+                font-family: $Font1;
+                color: $ColorBotonContacto;
+                text-shadow: 0 0 5px black;
+                letter-spacing: 1px;
+            }
+
+            .redes-sociales {
+                a {
+                    color: $ColorLetra;
+                    font-size: 35px;
+                    padding: 40px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $ColorExtra;
+                        text-shadow: black 1px 0 10px;
+                    }
+                }
+            }
+        }
+
+        img {
+            max-width: 400px;
+            height: auto;
+            margin: 20px;
+            flex-basis: 33.33%;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Clientes {
+
+        .col {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .Resena {
+
+                img {
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    flex-basis: 100%;
+                    text-align: center;
+                    letter-spacing: normal;
+                    text-shadow: none;
+                    font-size: 30px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    #Clientes {
+        flex-direction: column-reverse;
+    }
+}

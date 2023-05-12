@@ -153,6 +153,75 @@ main {
   grid-template-areas: "h2 h2 h2 h2" "id9 id10 id11 id12" "id13 id14 id15 id16";
 }
 
+.Clientes {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 224, 221, 0.4);
+}
+.Clientes .col {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: justify;
+}
+.Clientes .col .Resena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Clientes .col .Resena p {
+  flex-basis: 33.33%;
+  text-align: center;
+  font-size: 50px;
+  font-family: juliette;
+  color: #66BABD;
+  text-shadow: 0 0 5px black;
+  letter-spacing: 1px;
+}
+.Clientes .col .Resena .redes-sociales a {
+  color: #3c6d6f;
+  font-size: 35px;
+  padding: 40px;
+  text-decoration: none;
+}
+.Clientes .col .Resena .redes-sociales a:hover {
+  color: #ffe0dd;
+  text-shadow: black 1px 0 10px;
+}
+.Clientes .col img {
+  max-width: 400px;
+  height: auto;
+  margin: 20px;
+  flex-basis: 33.33%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Clientes .col {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Clientes .col .Resena img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .Clientes .col .Resena p {
+    flex-basis: 100%;
+    text-align: center;
+    letter-spacing: normal;
+    text-shadow: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  #Clientes {
+    flex-direction: column-reverse;
+  }
+}
 .Daki {
   display: flex;
   flex-wrap: wrap;
@@ -245,6 +314,27 @@ main {
   }
   #carousel-aboutME .carousel-item:nth-of-type(3) img {
     content: url(../img/mobilebanner3.jpg);
+  }
+}
+
+#carousel-Clientes .carousel-item:nth-of-type(1) img {
+  content: url(../img/Banner\ cliente1.jpg);
+}
+#carousel-Clientes .carousel-item:nth-of-type(2) img {
+  content: url(../img/Banner\ cliente2.jpg);
+}
+#carousel-Clientes .carousel-item:nth-of-type(3) img {
+  content: url(../img/Banner\ cliente3.jpg);
+}
+@media only screen and (max-width: 700px) {
+  #carousel-Clientes .carousel-item:nth-of-type(1) img {
+    content: url(../img/Mobile-Cliente1.jpg);
+  }
+  #carousel-Clientes .carousel-item:nth-of-type(2) img {
+    content: url(../img/Mobile-Cliente2.jpg);
+  }
+  #carousel-Clientes .carousel-item:nth-of-type(3) img {
+    content: url(../img/Mobile-Cliente3.jpg);
   }
 }
 
