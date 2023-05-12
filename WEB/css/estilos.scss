@@ -66,6 +66,8 @@ main {
 
 @import "_Clientes.scss";
 
+@import "_Productos.scss";
+
 @import "_About-me.scss";
 
 @import "_Carrusel.scss";
@@ -144,107 +146,4 @@ main {
 @import "_Footer.scss";
 
 
-@media only screen and (max-width: 700px) {
-
-    header {
-
-
-        .logo {
-            font-size: 30px;
-        }
-
-        .checkbtn {
-            display: block;
-        }
-
-        nav ul {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: $ColorExtra;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-
-            li {
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-
-                a {
-                    font-size: 40px;
-                }
-            }
-
-            li a:hover,
-            ul a.active {
-                background: none;
-                color: $ColorExtra;
-                text-shadow: 1px 1px 2px #615553;
-            }
-
-        }
-
-        #check:checked~ul {
-            left: 0;
-            position: fixed;
-            top: 80px;
-            bottom: 0;
-            right: 0;
-            z-index: 2;
-        }
-    }
-
-}
-
-@media only screen and (max-width: 700px) {
-
-    .Inicio {
-        padding: 5px;
-        font-size: 28px;
-
-        h2 {
-            grid-area: h2;
-            font-size: 70px;
-        }
-
-        .Juegos {
-            grid-template-columns: 1fr 1fr;
-            padding: 10px;
-            grid-template-rows: 100px repeat(4, 200px);
-            gap: 10px;
-            grid-template-areas:
-                "h2 h2"
-                "id1 id2"
-                "id3 id4"
-                "id5 id6"
-                "id7 id8";
-        }
-    
-    
-        .Anime {
-            grid-template-columns: 1fr 1fr;
-            padding: 10px;
-            grid-template-rows: 100px repeat(4, 200px);
-            gap: 10px;
-            grid-template-areas:
-                "h2 h2"
-                "id9 id10"
-                "id11 id12"
-                "id13 id14"
-                "id15 id16";
-        }
-
-        .myCard {
-            background-color: transparent;
-            width: 180px;
-            height: 180px;
-            perspective: 1000px;
-            text-shadow: black 1px 0 10px;
-        }
-    
-    }   
-
-}
 

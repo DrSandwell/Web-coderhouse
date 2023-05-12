@@ -61,3 +61,54 @@
             "id13 id14 id15 id16";
     }
 }
+
+@media only screen and (max-width: 700px) {
+
+    .Inicio {
+        padding: 5px;
+        font-size: 28px;
+
+        h2 {
+            grid-area: h2;
+            font-size: 70px;
+        }
+
+        .Juegos {
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            grid-template-rows: 100px repeat(4, 200px);
+            gap: 10px;
+            grid-template-areas:
+                "h2 h2"
+                "id1 id2"
+                "id3 id4"
+                "id5 id6"
+                "id7 id8";
+        }
+    
+    
+        .Anime {
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            grid-template-rows: 100px repeat(4, 200px);
+            gap: 10px;
+            grid-template-areas:
+                "h2 h2"
+                "id9 id10"
+                "id11 id12"
+                "id13 id14"
+                "id15 id16";
+        }
+
+        .myCard {
+            background-color: transparent;
+            width: 180px;
+            height: 180px;
+            perspective: 1000px;
+            text-shadow: black 1px 0 10px;
+        }
+    
+    }   
+
+}
+
