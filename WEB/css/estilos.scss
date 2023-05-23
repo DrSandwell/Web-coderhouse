@@ -39,15 +39,6 @@ body {
     background: $ColorFondo;
     background-image: url(../img/v1013-p-0001a.jpg);
     background-size: cover;
-
-    .Construccion {
-        background-image: url(../img/Pagina-en-construccion.jpg);
-        height: 100vh;
-        font-size: 36px;
-        text-align: center;
-        color: $ColorExtra;
-        text-shadow: 1px 1px 1px black;
-    }
 }
 
 @import "_Header.scss";
@@ -76,8 +67,7 @@ main {
 
 .myCard {
     background-color: transparent;
-    width: 400px;
-    height: 400px;
+    max-width: 400px; 
     perspective: 1000px;
     text-shadow: 1px 1px 1px black;
 

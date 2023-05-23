@@ -11,7 +11,7 @@
         content: url(../img/banner\ inicio3.jpg);
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1100px) {
         .carousel-item:nth-of-type(1) img {
             content: url(../img/Mobile-Banner2.jpg);
         }
@@ -39,7 +39,7 @@
         content: url(../img/banner3.jpg);
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1100px) {
         .carousel-item:nth-of-type(1) img {
             content: url(../img/mobilebanner1.jpg);
         }
@@ -67,7 +67,7 @@
         content: url(../img/Banner\ cliente3.jpg);
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1100px) {
         .carousel-item:nth-of-type(1) img {
             content: url(../img/Mobile-Cliente1.jpg);
         }
